@@ -1,0 +1,19 @@
+.home-title {
+    height: 30px;
+    width: 168px;
+    margin-top: 5vh;
+}
+
+.home-description {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 42px;
+    width: 274px;
+}
+
+.sign-in-title{
+    height: 38px;
+    width: 208px;
+    font-size: 28px;
+    line-height: 37,8px;
+}
