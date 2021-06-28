@@ -4,6 +4,9 @@ import { Input } from '../../components/Input/Input'
 import { Paragraph } from '../../components/Paragraph/Paragraph';
 import { Title } from '../../components/Title/Title';
 
+import { useHistoryHook } from '../../hooks/useHistoryHook';
+
+
 import facebook from '../../assets/facebook.png';
 import google from '../../assets/google.png';
 
@@ -43,6 +46,7 @@ export const SignInPage = () => {
             <Button
                 className="sign-in-button-google"
                 title="LOG IN"
+                onClick={useHistoryHook("welcome")}
             />
             <Paragraph
                 className="sign-in-paragraph-two"

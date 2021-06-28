@@ -5,6 +5,8 @@ import { Description } from '../../components/Description/Description';
 import { Button } from '../../components/Button/Button';
 import { Paragraph } from '../../components/Paragraph/Paragraph';
 
+import { useHistoryHook } from '../../hooks/useHistoryHook';
+
 import meditation from '../../assets/meditation.png';
 import './HomePage.css'
 
@@ -28,6 +30,7 @@ export const HomePage = () => {
       <Button
         className="home-button"
         title="Sign Up"
+        onClick={useHistoryHook("sign-in")}
       />
       <Paragraph
         className="home-paragraph"
