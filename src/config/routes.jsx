@@ -4,6 +4,7 @@ import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
 import { WelcomePage } from "../pages/WelcomePage/WelcomePage";
 import { TopicPage } from "../pages/TopicPage/TopicPage";
 import { RemindersPage } from "../pages/RemindersPage/RemindersPage";
+import { MusicPage } from "../pages/MusicPage/MusicPage";
 
 const routes = [
   {
@@ -34,6 +35,11 @@ const routes = [
   {
     path: "/reminders",
     component: RemindersPage,
+    exact: false,
+  },
+  {
+    path: "/music",
+    component: MusicPage,
     exact: false,
   },
 ];

@@ -30,7 +30,7 @@ export const HomePage = () => {
       <Button
         className="home-button"
         title="Sign Up"
-        onClick={useHistoryHook("sign-in")}
+        //onClick={useHistoryHook("sign-in")}
       />
       <Paragraph
         className="home-paragraph"
