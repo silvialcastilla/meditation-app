@@ -1,17 +1,22 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { LanguageContext } from "./context/LanguageContext";
 import routes from "./config/routes";
 
 import './App.css'
 
 
-function App() {
+const App = ( )=> {
 
-  const [state, setstate] = useState('es')
+  const [language, setLanguage] = useState('es')
 
   return (
     <div className="App">
-      <button onClick={setstate('en')}>Cambiar idioma</button>
+      <button onClick={()=> (language === 'es' ? setLanguage('en') : setLanguage('es'))}>Cambiar idioma</button>
+      <LanguageContext.Provider value={{
+        language: language,
+        setLanguage: setLanguage
+      }}>
       <Router>
         <Switch>
           {routes.map((route, index) => {
@@ -26,6 +31,7 @@ function App() {
           })}
         </Switch>
       </Router>
+      </LanguageContext.Provider>
     </div>
   );
 }

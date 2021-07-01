@@ -1,0 +1,21 @@
+{
+    "homepage": {
+        "description": 
+            {
+            "es": "Miles de personas están usando silent moon para meditar",
+            "en": "Thousand of people are usign silent moon for smalls meditation"
+            },
+        "title": {
+            "es": "Somos lo que hacemos",
+            "en":"We are what we do"
+        },
+        "buttonSignUp": {
+            "es": "Registrate",
+            "en": "Sign Up"
+        },
+        "paragraphAccount": {
+            "es": "¿YA TIENES UNA CUENTA? LOGUEATE",
+            "en": "ALREADY HAVE AN ACCOUNT? SIGN IN"
+        }
+    }
+}

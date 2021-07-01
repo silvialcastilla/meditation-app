@@ -1,16 +1,26 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+import { useHistory } from "react-router-dom";
+
 import { Title } from '../../components/Title/Title';
 import { Image } from '../../components/Image/Image';
 import { Description } from '../../components/Description/Description';
 import { Button } from '../../components/Button/Button';
 import { Paragraph } from '../../components/Paragraph/Paragraph';
 
-import { useHistoryHook } from '../../hooks/useHistoryHook';
+import { LanguageContext } from "../../context/LanguageContext";
+
 
 import meditation from '../../assets/meditation.png';
-import './HomePage.css'
+import datalanguage from '../../utils/languaje.json'
+import './HomePage.css';
 
 export const HomePage = () => {
+
+  const { language } = useContext(LanguageContext);
+
+  const history = useHistory();
+
   return (
     <div className="home">
       <Title
@@ -23,18 +33,18 @@ export const HomePage = () => {
         src={meditation}
       />
       <Description
-        information="Thousand of people are usign silent moon for smalls meditation"
-        title="We are what we do"
+        information={ language === 'en' ? datalanguage.homepage.description.en : datalanguage.homepage.description.es}
+        title={ language === 'en' ? datalanguage.homepage.title.en : datalanguage.homepage.title.es}
         className="home-description"
       />
       <Button
         className="home-button"
-        title="Sign Up"
-        //onClick={useHistoryHook("sign-in")}
+        title={language === 'en' ? datalanguage.homepage.buttonSignUp.en : datalanguage.homepage.buttonSignUp.es}
+        onClick={() => history.push('/sign-up')}
       />
       <Paragraph
         className="home-paragraph"
-        information="ALREADY HAVE AN ACCOUNT? LOG IN"
+        information={language === 'en' ? datalanguage.homepage.paragraphAccount.en : datalanguage.homepage.paragraphAccount.es}
       />
     </div>
   )
