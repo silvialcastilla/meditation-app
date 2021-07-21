@@ -17,5 +17,31 @@
             "es": "¿YA TIENES UNA CUENTA? LOGUEATE",
             "en": "ALREADY HAVE AN ACCOUNT? SIGN IN"
         }
+    },
+    "signUpPage": {
+        "title": {
+            "es": "Crea tu cuenta",
+            "en":"Create your account"
+        },
+        "buttonFacebook": {
+            "es": "CONTINUA CON FACEBOOK",
+            "en": "CONTINUE WITH FACEBOOK"
+        },
+        "buttonGoogle": {
+            "es": "CONTINUA CON GOOGLE",
+            "en": "CONTINUE WITH GOOGLE"
+        },
+        "paragraphLogIn": {
+            "es": "¿YA TIENES UNA CUENTA? LOGUEATE",
+            "en": "ALREADY HAVE AN ACCOUNT? SIGN IN"
+        },
+        "paragraphPrivatePolicy": {
+            "es": "He leido la Política de Privacidad",
+            "en": "I have read the Privace Policy"
+        },
+        "button": {
+            "es": "EMPECEMOS",
+            "en": "GET STARTED"
+        }
     }
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import { Description } from '../../components/Description/Description'
 import { CardList} from '../../components/CardList/CardList'
 
+import "leaflet/dist/leaflet.css";
+
 import data from '../../utils/data.json'
 
 export const TopicPage = () => {
