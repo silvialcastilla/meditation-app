@@ -1,0 +1,19 @@
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+
+.sign-up.title {
+    height: 38px;
+    width: 70%;
+    font-size: 28px;
+}
+
+.sign-up-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

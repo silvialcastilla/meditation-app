@@ -35,6 +35,18 @@
             "es": "¿YA TIENES UNA CUENTA? LOGUEATE",
             "en": "ALREADY HAVE AN ACCOUNT? SIGN IN"
         },
+        "inputName": {
+            "es": "Nombre",
+            "en": "Name"
+        },
+        "inputEmail": {
+            "es": "Email",
+            "en": "Email"
+        },
+        "inputPassword": {
+            "es": "Contraseña",
+            "en": "Password"
+        },
         "paragraphPrivatePolicy": {
             "es": "He leido la Política de Privacidad",
             "en": "I have read the Privace Policy"
@@ -42,6 +54,48 @@
         "button": {
             "es": "EMPECEMOS",
             "en": "GET STARTED"
+        }
+    },
+    "signInPage": {
+        "title": {
+            "es": "¡Bienvenido de nuevo!",
+            "en":"Welcome Back!"
+        },
+        "buttonFacebook": {
+            "es": "CONTINUA CON FACEBOOK",
+            "en": "CONTINUE WITH FACEBOOK"
+        },
+        "buttonGoogle": {
+            "es": "CONTINUA CON GOOGLE",
+            "en": "CONTINUE WITH GOOGLE"
+        },
+        "paragraphLogIn": {
+            "es": "O LOGUEATE CON EMAIL",
+            "en": "OR LOG IN WITH EMAIL"
+        },
+        "inputEmail": {
+            "es": "Email",
+            "en": "Email"
+        },
+        "inputPassword": {
+            "es": "Contraseña",
+            "en": "Password"
+        },
+        "button": {
+            "es": "EMPECEMOS",
+            "en": "GET STARTED"
+        },
+        "paragraphPassword": {
+            "es": "EMPECEMOS",
+            "en": "GET STARTED"
+        },
+        "a": {
+            "es": "Olvidé mi contrasea",
+            "en": "Forgot Password"
+        },
+        "paragraphAccount": {
+            "es": "¿YA TIENES UNA CUENTA? LOGUEATE",
+            "en": "ALREADY HAVE AN ACCOUNT? SIGN IN"
         }
     }
 }

@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import './Input.scss'
 
-export const Input = ({name, type}) => {
+export const Input = ({className, name, type, placeholder}) => {
     return (
-        <input type={type} name={name}/>
+        <input type={type} className={className} name={name} placeholder={placeholder}/>
     )
 }

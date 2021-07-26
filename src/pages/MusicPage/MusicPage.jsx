@@ -11,7 +11,7 @@ import pause from '../../assets/pause.png'
 import './MusicPage.css'
 
 export const MusicPage = () => {
-     {/* falta poner minimo y maximo*/}  
+     /* falta poner minimo y maximo*/  
     return (
         <div>
             <Button
