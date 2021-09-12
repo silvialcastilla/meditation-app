@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin button-purple {
+    background-color: $principal-color;
+    color: $font-color;
+    width: 386px;
+    height: 54px;
+    border-radius: 38px;
+    border: 0px solid transparent;
+    margin-top: 50px;
+}
