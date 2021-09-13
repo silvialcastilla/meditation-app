@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LanguageContext } from "./context/LanguageContext";
 import routes from "./config/routes";
 
-import './App.scss'
+import './Styles/App.scss'
 
 
 const App = ( )=> {

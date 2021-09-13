@@ -6,9 +6,11 @@ import { Button } from '../../components/Button/Button';
 
 import meditation from '../../assets/meditation.png'
 
+import './WelcomePage.scss'
+
 export const WelcomePage = () => {
     return (
-        <div>
+        <div className="welcome">
         <Title
             className="welcome-title"
             title="Silent Moon"

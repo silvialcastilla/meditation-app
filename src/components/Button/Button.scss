@@ -1,11 +1,19 @@
+/*@mixin theme($theme: DarkGray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: #fff;
+}*/
+
+@use 'base';
+
 .all{
     display: flex;
     align-self: center;
-
 }
 
 .home-button {
-    background-color: #8E97FD;
+    /*@include theme;*/
+    //background-color: base.$purple-button;
     color: #F6F1FB;
     width: 386px;
     height: 54px;
@@ -59,6 +67,7 @@
 }
 
 .sign-in-button-facebook {
+    margin-top: 30px;
     background-color: #7583CA;
     color: #F6F1FB;
     display: flex;

@@ -1,4 +1,6 @@
 import React, {useContext} from 'react';
+import { useHistory } from "react-router-dom";
+
 import { Title } from '../../components/Title/Title';
 import { Button } from '../../components/Button/Button';
 import { Input } from '../../components/Input/Input'
@@ -16,6 +18,7 @@ import './SignUpPage.scss'
 
 export const SignUpPage = () => {
 
+    const history = useHistory();
     const { language } = useContext(LanguageContext);
 
     return (
@@ -24,6 +27,7 @@ export const SignUpPage = () => {
                 alt="back icon"
                 className="sign-up-button-back"
                 image={back}
+                onClick={() => history.push("/")}
             />
             <Title
                 className="sign-up-title"
@@ -33,17 +37,20 @@ export const SignUpPage = () => {
                 alt="facebook icon"
                 className="sign-up-button-facebook"
                 image={facebook}
+                onClick={() => history.push("/")}
                 title={ language === 'en' ? datalanguage.signUpPage.buttonFacebook.en : datalanguage.signUpPage.buttonFacebook.es}
             />
             <Button
                 alt="google icon"
                 className="sign-up-button-google"
                 image={google}
+                onClick={() => history.push("/")}
                 title={ language === 'en' ? datalanguage.signUpPage.buttonGoogle.en : datalanguage.signUpPage.buttonGoogle.es}
             />
             <Paragraph
                 className="sign-up-paragraph-one"
                 information={ language === 'en' ? datalanguage.signUpPage.paragraphLogIn.en : datalanguage.signUpPage.paragraphLogIn.es}
+                onClick={() => history.push("/sign-in")}
             />
             <Input
                 className="sign-up-input"
@@ -76,6 +83,7 @@ export const SignUpPage = () => {
             </div>        
             <Button
                 className="sign-up-button-facebook"
+                onClick={() => history.push("/welcome")}
                 title={ language === 'en' ? datalanguage.signUpPage.button.en : datalanguage.signUpPage.button.es}
             />
         </div>

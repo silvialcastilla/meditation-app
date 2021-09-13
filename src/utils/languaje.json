@@ -85,17 +85,13 @@
             "es": "EMPECEMOS",
             "en": "GET STARTED"
         },
-        "paragraphPassword": {
-            "es": "EMPECEMOS",
-            "en": "GET STARTED"
-        },
-        "a": {
-            "es": "Olvidé mi contrasea",
+        "paragraphPWD": {
+            "es": "Olvidé mi contraseña",
             "en": "Forgot Password"
         },
         "paragraphAccount": {
-            "es": "¿YA TIENES UNA CUENTA? LOGUEATE",
-            "en": "ALREADY HAVE AN ACCOUNT? SIGN IN"
+            "es": "¿NO TIENES UNA CUENTA? REGISTRATE",
+            "en": "DON'T HAVE AN ACCOUNT? SIGN UP"
         }
     }
 }

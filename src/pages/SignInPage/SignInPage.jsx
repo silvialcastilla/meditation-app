@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { useHistory } from "react-router-dom";
 
 import { Button } from '../../components/Button/Button';
@@ -27,53 +27,58 @@ export const SignInPage = () => {
                 alt="back icon"
                 className="sign-up-button-back"
                 image={back}
+                onClick={() => history.push("/")}
             />
             <Title
                 className="sign-in-title"
-                title={ language === 'en' ? datalanguage.signInPage.title.en : datalanguage.signInPage.title.es}
-            
+                title={language === 'en' ? datalanguage.signInPage.title.en : datalanguage.signInPage.title.es}
             />
             <Button
                 alt="facebook icon"
                 className="sign-in-button-facebook"
                 image={facebook}
-                title={ language === 'en' ? datalanguage.signInPage.buttonFacebook.en : datalanguage.signInPage.buttonFacebook.es}
+                onClick={() => history.push("/")}
+                title={language === 'en' ? datalanguage.signInPage.buttonFacebook.en : datalanguage.signInPage.buttonFacebook.es}
             />
             <Button
                 alt="google icon"
                 className="sign-in-button-google"
                 image={google}
-                title={ language === 'en' ? datalanguage.signInPage.buttonGoogle.en : datalanguage.signInPage.buttonGoogle.es}
+                onClick={() => history.push("/")}
+                title={language === 'en' ? datalanguage.signInPage.buttonGoogle.en : datalanguage.signInPage.buttonGoogle.es}
             />
             <Paragraph
                 className="sign-in-paragraph-one"
-                information={ language === 'en' ? datalanguage.signInPage.paragraphLogIn.en : datalanguage.signInPage.paragraphLogIn.es}
-                />
+                information={language === 'en' ? datalanguage.signInPage.paragraphLogIn.en : datalanguage.signInPage.paragraphLogIn.es}
+                onClick={() => history.push("/sign-up")}
+            />
             <Input
                 className="sign-in-input"
                 name="email"
                 type="text"
-                placeholder={ language === 'en' ? datalanguage.signUpPage.inputEmail.en : datalanguage.signUpPage.inputEmail.es} 
+                placeholder={language === 'en' ? datalanguage.signUpPage.inputEmail.en : datalanguage.signUpPage.inputEmail.es}
             />
             <Input
                 className="sign-in-input"
                 name="password"
-                type="password" 
-                placeholder={ language === 'en' ? datalanguage.signUpPage.inputPassword.en : datalanguage.signUpPage.inputPassword.es}
+                type="password"
+                placeholder={language === 'en' ? datalanguage.signUpPage.inputPassword.en : datalanguage.signUpPage.inputPassword.es}
             />
             <Button
                 className="sign-in-button-facebook"
-                title={ language === 'en' ? datalanguage.signUpPage.button.en : datalanguage.signUpPage.button.es}
-                onClick={()=> history.push("welcome")}
+                title={language === 'en' ? datalanguage.signUpPage.button.en : datalanguage.signUpPage.button.es}
+                onClick={() => history.push("welcome")}
             />
-            {/* <Paragraph
+            <Paragraph
                 className="sign-in-paragraph-two"
-                information={ language === 'en' ? datalanguage.signUpPage.paragraphPassword.en : datalanguage.signUpPage.paragraphPassword.es}
-                /> */}
-            {/* <Paragraph
+                information={language === 'en' ? datalanguage.signInPage.paragraphPWD.en : datalanguage.signInPage.paragraphPWD.es}
+                onClick={() => history.push("/")}
+            />
+            <Paragraph
                 className="sign-in-paragraph-three"
-                information={ language === 'en' ? datalanguage.signUpPage.paragraphAccount.en : datalanguage.signUpPage.paragraphAccount.es}
-            /> */}
+                information={language === 'en' ? datalanguage.signInPage.paragraphAccount.en : datalanguage.signInPage.paragraphAccount.es}
+                onClick={() => history.push("/sign-up")}
+            />
 
         </div>
     )

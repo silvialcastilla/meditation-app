@@ -13,7 +13,7 @@ import { LanguageContext } from "../../context/LanguageContext";
 
 import meditation from '../../assets/meditation.png';
 import datalanguage from '../../utils/languaje.json'
-import './HomePage.css';
+import './HomePage.scss';
 
 export const HomePage = () => {
 
@@ -45,6 +45,7 @@ export const HomePage = () => {
       <Paragraph
         className="home-paragraph"
         information={language === 'en' ? datalanguage.homepage.paragraphAccount.en : datalanguage.homepage.paragraphAccount.es}
+        onClick={() => history.push("/sign-in")}
       />
     </div>
   )
