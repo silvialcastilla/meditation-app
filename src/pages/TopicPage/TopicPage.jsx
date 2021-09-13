@@ -10,7 +10,7 @@ export const TopicPage = () => {
     return (
         <div>
             <Description
-                className="topic-description"
+                className="description-topic"
                 information="choose a topic to focuse on:"
                 title="What Brings you to Silent Moon?"
             />

@@ -5,73 +5,74 @@
     align-self: center;
 }
 
-.home-button {
+.button {
+    &-home{
     @include button-purple;
+    }
+    &-sign-up{
+        &-back {
+            background-color: white;
+            align-self: flex-start;
+            border-radius: 100%;
+            border: 1px solid black;
+            width: 55px;
+            height: 55px;   
+            margin-left: 30px;
+        }
+        &-facebook {    
+            background-color: $principal-color;
+            color: #F6F1FB;
+            display: flex;
+            align-items: center;
+            width: 364px;
+            height: 40px;
+            border-radius: 20px;
+            border: 0px solid transparent;
+            width: 386px;
+            height: 54px;
+        }
+        &-google {    
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            width: 386px;
+            height: 54px;
+            border-radius: 20px;
+            border: 0px solid transparent;
+        }
+    }
+    &-sing-in{
+        &-back{
+            background-color: white;
+            align-self: flex-start;
+            border-radius: 100%;
+            border: 1px solid black;
+            width: 55px;
+            height: 55px;   
+            margin-left: 30px;
+        }
+        &-facebook{
+            background-color: $principal-color;
+            color: #F6F1FB;
+            display: flex;
+            align-items: center;
+            width: 364px;
+            height: 40px;
+            border-radius: 20px;
+            border: 0px solid transparent;
+            width: 386px;
+            height: 54px;
+        }
+        &-google{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            width: 386px;
+            height: 54px;
+            border-radius: 20px;
+            border: 0px solid transparent;
+        }
+    }
 }
 
-.sign-up-button-back {
-    background-color: white;
-    align-self: flex-start;
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 55px;
-    height: 55px;   
-    margin-left: 30px;
-}
 
-.sign-up-button-facebook {
-    background-color: $principal-color;
-    color: #F6F1FB;
-    display: flex;
-    align-items: center;
-    width: 364px;
-    height: 40px;
-    border-radius: 20px;
-    border: 0px solid transparent;
-    width: 386px;
-    height: 54px;
-}
-
-.sign-up-button-google{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    width: 386px;
-    height: 54px;
-    border-radius: 20px;
-    border: 0px solid transparent;
-}
-
-
-.sign-in-button-back {
-    background-color: white;
-    align-self: flex-start;
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 55px;
-    height: 55px;   
-    margin-left: 30px;
-}
-
-.sign-in-button-facebook {
-    background-color: $principal-color;
-    color: #F6F1FB;
-    display: flex;
-    align-items: center;
-    width: 364px;
-    height: 40px;
-    border-radius: 20px;
-    border: 0px solid transparent;
-    width: 386px;
-    height: 54px;
-}
-
-.sign-in-button-google{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    width: 386px;
-    height: 54px;
-    border-radius: 20px;
-    border: 0px solid transparent;
-}

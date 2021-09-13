@@ -1,16 +1,18 @@
-.home-paragraph{
-    font-family: HelveticaNeue;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0.05em;
-    text-align: left;
+.paragraph {
+    &-home {
+        font-family: HelveticaNeue;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-align: left;
+    }
+    &-description {
+        margin-top: 0px;
+        height: 42px;
+        width: 274px;
+    }
 }
 
-.home-description {
-    margin-top: 0px;
-    height: 42px;
-    width: 274px;
-}
 

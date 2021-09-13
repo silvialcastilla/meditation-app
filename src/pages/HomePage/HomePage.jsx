@@ -23,26 +23,26 @@ export const HomePage = () => {
   return (
     <div className="home">
       <Title
-        className="home-title"
+        className="title-home"
         title="Silent Moon"
       />
       <Image
         alt="image of a woman meditating"
-        className="home-img"
+        className="img-home"
         src={meditation}
       />
       <Description
         information={ language === 'en' ? datalanguage.homepage.description.en : datalanguage.homepage.description.es}
         title={ language === 'en' ? datalanguage.homepage.title.en : datalanguage.homepage.title.es}
-        className="home-description"
+        className="description-home"
       />
       <Button
-        className="home-button"
+        className="button-home"
         title={language === 'en' ? datalanguage.homepage.buttonSignUp.en : datalanguage.homepage.buttonSignUp.es}
         onClick={() => history.push('/sign-up')}
       />
       <Paragraph
-        className="home-paragraph"
+        className="paragraph-home"
         information={language === 'en' ? datalanguage.homepage.paragraphAccount.en : datalanguage.homepage.paragraphAccount.es}
         onClick={() => history.push("/sign-in")}
       />

@@ -25,57 +25,57 @@ export const SignInPage = () => {
         <div className="sign-in">
             <Button
                 alt="back icon"
-                className="sign-up-button-back"
+                className="button-sign-up-back"
                 image={back}
                 onClick={() => history.push("/")}
             />
             <Title
-                className="sign-in-title"
+                className="title-sign-in"
                 title={language === 'en' ? datalanguage.signInPage.title.en : datalanguage.signInPage.title.es}
             />
             <Button
                 alt="facebook icon"
-                className="sign-in-button-facebook"
+                className="button-sign-in-facebook"
                 image={facebook}
                 onClick={() => history.push("/")}
                 title={language === 'en' ? datalanguage.signInPage.buttonFacebook.en : datalanguage.signInPage.buttonFacebook.es}
             />
             <Button
                 alt="google icon"
-                className="sign-in-button-google"
+                className="button-sign-in-google"
                 image={google}
                 onClick={() => history.push("/")}
                 title={language === 'en' ? datalanguage.signInPage.buttonGoogle.en : datalanguage.signInPage.buttonGoogle.es}
             />
             <Paragraph
-                className="sign-in-paragraph-one"
+                className="paragraph-sign-in-one"
                 information={language === 'en' ? datalanguage.signInPage.paragraphLogIn.en : datalanguage.signInPage.paragraphLogIn.es}
                 onClick={() => history.push("/sign-up")}
             />
             <Input
-                className="sign-in-input"
+                className="input-sign-in"
                 name="email"
                 type="text"
                 placeholder={language === 'en' ? datalanguage.signUpPage.inputEmail.en : datalanguage.signUpPage.inputEmail.es}
             />
             <Input
-                className="sign-in-input"
+                className="input-sign-in"
                 name="password"
                 type="password"
                 placeholder={language === 'en' ? datalanguage.signUpPage.inputPassword.en : datalanguage.signUpPage.inputPassword.es}
             />
             <Button
-                className="sign-in-button-facebook"
+                className="button-sign-in-facebook"
                 title={language === 'en' ? datalanguage.signUpPage.button.en : datalanguage.signUpPage.button.es}
                 onClick={() => history.push("welcome")}
             />
             <Paragraph
-                className="sign-in-paragraph-two"
+                className="paragraph-sign-in-two"
                 information={language === 'en' ? datalanguage.signInPage.paragraphPWD.en : datalanguage.signInPage.paragraphPWD.es}
                 onClick={() => history.push("/")}
             />
             <Paragraph
-                className="sign-in-paragraph-three"
+                className="paragraph-sign-in-three"
                 information={language === 'en' ? datalanguage.signInPage.paragraphAccount.en : datalanguage.signInPage.paragraphAccount.es}
                 onClick={() => history.push("/sign-up")}
             />

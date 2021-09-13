@@ -10,22 +10,22 @@ export const WelcomePage = () => {
     return (
         <div className="welcome">
         <Title
-            className="welcome-title"
+            className="title-welcome"
             title="Silent Moon"
         />
 
         <Description
-            className="welcome-description"
+            className="description-welcome"
             information="Explore the app, Find some peace of mind to prepare for meditation."
             title="Hi, Welcome to Silent Moon"
         />
         <Image
             alt="image of a woman meditating"
-            className="welcome-img"
+            className="img-welcome"
             src={meditation}
         />
         <Button
-            className="welcome-button"
+            className="button-welcome"
             title="GET STARTED"
         />
     

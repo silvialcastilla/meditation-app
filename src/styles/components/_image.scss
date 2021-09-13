@@ -1,5 +1,7 @@
-.home-img {
-    height: 256px;
-    width: 356px;
-    border-radius: nullpx;
+.img{
+    &-home {
+        height: 256px;
+        width: 356px;
+        border-radius: nullpx;
+    }
 }

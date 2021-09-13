@@ -14,30 +14,30 @@ export const MusicPage = () => {
     return (
         <div>
             <Button
-                className="music-back"
+                className="button-music-back"
                 image={equis}
                 clase="music-back-img"
             />
             <Button
-                className="music-like"
+                className="button-music-like"
                 image={heart}
                 clase="music-like-img"
             />
             <Button
-                className="music-download"
+                className="button-music-download"
                 image={download}
             />
             <Button
-                className="music-minutes-back"
+                className="button-music-minutes-back"
                 image={arrowleft}
                 clase="music-arrowleft-img"
             />
             <Button
-                className="music-pause"
+                className="button-music-pause"
                 image={pause}
             />
             <Button
-                className="music-minutes-goes"
+                className="button-music-minutes-goes"
                 image={arrowright}
                 clase="music-arrowright-img"
             />
