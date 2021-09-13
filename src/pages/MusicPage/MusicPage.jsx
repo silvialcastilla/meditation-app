@@ -8,7 +8,6 @@ import arrowleft from '../../assets/arrowleft.png';
 import arrowright from '../../assets/arrowright.png';
 import download from '../../assets/download.png';
 import pause from '../../assets/pause.png'
-import './MusicPage.css'
 
 export const MusicPage = () => {
      /* falta poner minimo y maximo*/  

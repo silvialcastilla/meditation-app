@@ -13,7 +13,6 @@ import { LanguageContext } from "../../context/LanguageContext";
 
 import meditation from '../../assets/meditation.png';
 import datalanguage from '../../utils/languaje.json'
-import './HomePage.scss';
 
 export const HomePage = () => {
 

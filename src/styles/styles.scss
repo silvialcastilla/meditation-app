@@ -1,5 +1,18 @@
-@import './utilities/variables';
+@import './base/_typo';
+@import './base/_base';
+
+@import './layout/flex.scss';
+
+@import './utilities/mixins';
 
 @import './components/buttons';
+@import './components/description';
+@import './components/image';
+@import './components/input';
+@import './components/paragraph';
+@import './components/title';
 
-@import './views/signUpPage'
+@import './views/homePage';
+@import './views/signInPage';
+@import './views/signUpPage';
+@import './views/welcomePage';

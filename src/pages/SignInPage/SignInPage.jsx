@@ -14,7 +14,7 @@ import facebook from '../../assets/facebook.png';
 import google from '../../assets/google.png';
 import back from '../../assets/back.png'
 
-import './SignInPage.scss'
+
 
 export const SignInPage = () => {
 

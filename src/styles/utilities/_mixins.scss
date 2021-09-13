@@ -9,3 +9,10 @@
     border: 0px solid transparent;
     margin-top: 50px;
 }
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
