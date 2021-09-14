@@ -1,12 +1,6 @@
 @import '../utilities/mixins';
 @import '../utilities/variables';
 
-.all
-{
-    display: flex;
-    align-self: center;
-}
-
 .button
 {
     &-home
@@ -21,13 +15,8 @@
         }
         &-facebook
         {
-            display: flex;
-            align-items: center;
-
-            width: 364px;
-            width: 386px;
-            height: 40px;
-            height: 54px;
+            @include button-flex;
+            @include button-dimensions;
 
             color: $font-color;
             border: 0 solid transparent;
@@ -36,11 +25,9 @@
         }
         &-google
         {
-            display: flex;
-            align-items: center;
+            @include button-flex;
+            @include button-dimensions;
 
-            width: 386px;
-            height: 54px;
             margin-top: 20px;
 
             border: 0 solid transparent;
@@ -63,13 +50,8 @@
         }
         &-facebook
         {
-            display: flex;
-            align-items: center;
-
-            width: 364px;
-            width: 386px;
-            height: 40px;
-            height: 54px;
+            @include button-flex;
+            @include button-dimensions;
 
             color: $font-color;
             border: 0 solid transparent;
@@ -78,11 +60,9 @@
         }
         &-google
         {
-            display: flex;
-            align-items: center;
+            @include button-flex;
+            @include button-dimensions;
 
-            width: 386px;
-            height: 54px;
             margin-top: 20px;
 
             border: 0 solid transparent;

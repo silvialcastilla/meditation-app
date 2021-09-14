@@ -25,10 +25,26 @@
     background-color: $primary-color;
 }
 
+@mixin button-auth 
+{
+    
+}
+
 @mixin flex-center
 {
     display: flex;
     align-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+
+@mixin button-flex 
+{
+    display: flex;
+    align-items: center;
+}
+
+@mixin button-dimensions {
+    width: 386px;
+    height: 54px;
 }
