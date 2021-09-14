@@ -1,78 +1,92 @@
 @import '../utilities/mixins';
+@import '../utilities/variables';
 
-.all{
+.all
+{
     display: flex;
     align-self: center;
 }
 
-.button {
-    &-home{
-    @include button-purple;
+.button
+{
+    &-home
+    {
+        @include button-purple;
     }
-    &-sign-up{
-        &-back {
-            background-color: white;
-            align-self: flex-start;
-            border-radius: 100%;
-            border: 1px solid black;
-            width: 55px;
-            height: 55px;   
-            margin-left: 30px;
+    &-sign-up
+    {
+        &-back
+        {
+            @include button-back;
         }
-        &-facebook {    
-            background-color: $principal-color;
-            color: #F6F1FB;
+        &-facebook
+        {
             display: flex;
             align-items: center;
+
             width: 364px;
-            height: 40px;
-            border-radius: 20px;
-            border: 0px solid transparent;
             width: 386px;
+            height: 40px;
             height: 54px;
+
+            color: $font-color;
+            border: 0 solid transparent;
+            border-radius: 20px;
+            background-color: $principal-color;
         }
-        &-google {    
-            margin-top: 20px;
+        &-google
+        {
             display: flex;
             align-items: center;
+
             width: 386px;
             height: 54px;
+            margin-top: 20px;
+
+            border: 0 solid transparent;
             border-radius: 20px;
-            border: 0px solid transparent;
         }
     }
-    &-sing-in{
-        &-back{
-            background-color: white;
+    &-sing-in
+    {
+        &-back
+        {
             align-self: flex-start;
-            border-radius: 100%;
-            border: 1px solid black;
+
             width: 55px;
-            height: 55px;   
+            height: 55px;
             margin-left: 30px;
+
+            border: 1px solid $secondary-color;
+            border-radius: 100%;
+            background-color: $primary-color;
         }
-        &-facebook{
-            background-color: $principal-color;
-            color: #F6F1FB;
+        &-facebook
+        {
             display: flex;
             align-items: center;
+
             width: 364px;
-            height: 40px;
-            border-radius: 20px;
-            border: 0px solid transparent;
             width: 386px;
+            height: 40px;
             height: 54px;
+
+            color: $font-color;
+            border: 0 solid transparent;
+            border-radius: 20px;
+            background-color: $principal-color;
         }
-        &-google{
-            margin-top: 20px;
+        &-google
+        {
             display: flex;
             align-items: center;
+
             width: 386px;
             height: 54px;
+            margin-top: 20px;
+
+            border: 0 solid transparent;
             border-radius: 20px;
-            border: 0px solid transparent;
         }
     }
 }
-
-

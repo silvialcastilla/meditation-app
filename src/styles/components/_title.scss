@@ -1,20 +1,21 @@
-.title {
-    &-sign-up {
-
-    }
-    &-home {
-        height: 30px;
+.title
+{
+    &-home
+    {
         width: 168px;
+        height: 30px;
         margin-top: 5vh;
     }
-    &-sign-in{
-        height: 38px;
-        width: 208px;
+    &-sign-in
+    {
         font-size: 28px;
         line-height: 37,8px;
+
+        width: 208px;
+        height: 38px;
     }
-    &-welcome {
-        color: #FFECCC; 
+    &-welcome
+    {
+        color: #ffeccc;
     }
 }
-

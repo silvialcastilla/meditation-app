@@ -1,18 +1,20 @@
-.paragraph {
-    &-home {
+.paragraph
+{
+    &-home
+    {
         font-family: HelveticaNeue;
         font-size: 14px;
-        font-style: normal;
         font-weight: 400;
+        font-style: normal;
         line-height: 15px;
-        letter-spacing: 0.05em;
+
         text-align: left;
+        letter-spacing: .05em;
     }
-    &-description {
-        margin-top: 0px;
-        height: 42px;
+    &-description
+    {
         width: 274px;
+        height: 42px;
+        margin-top: 0;
     }
 }
-
-
