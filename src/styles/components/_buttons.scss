@@ -13,60 +13,86 @@
         {
             @include button-back;
         }
+        &-padding
+        {
+            padding-right: $dimensions-padding-margin;
+        }
         &-facebook
         {
-            @include button-flex;
-            @include button-dimensions;
+            padding-left: $dimensions-padding-margin;
 
             color: $font-color;
             border: 0 solid transparent;
             border-radius: 20px;
             background-color: $principal-color;
+
+            @include button-flex;
+            @include button-dimensions;
         }
         &-google
         {
-            @include button-flex;
-            @include button-dimensions;
-
             margin-top: 20px;
+            padding-left: $dimensions-padding-margin;
 
             border: 0 solid transparent;
             border-radius: 20px;
+
+            @include button-flex;
+            @include button-dimensions;
+        }
+        &-start
+        {
+            color: $font-color;
+            border: 0 solid transparent;
+            border-radius: 20px;
+            background-color: $principal-color;
+
+            @include button-flex;
+            @include button-dimensions;
         }
     }
-    &-sing-in
-    {
+    &-sign-in {
         &-back
         {
-            align-self: flex-start;
-
-            width: 55px;
-            height: 55px;
-            margin-left: 30px;
-
-            border: 1px solid $secondary-color;
-            border-radius: 100%;
-            background-color: $primary-color;
+            @include button-back;
+        }
+        &-padding
+        {
+            padding-right: $dimensions-padding-margin;
         }
         &-facebook
         {
-            @include button-flex;
-            @include button-dimensions;
+            padding-left: $dimensions-padding-margin;
 
             color: $font-color;
             border: 0 solid transparent;
             border-radius: 20px;
             background-color: $principal-color;
+
+            @include button-flex;
+            @include button-dimensions;
         }
         &-google
         {
-            @include button-flex;
-            @include button-dimensions;
-
             margin-top: 20px;
+            padding-left: $dimensions-padding-margin;
 
             border: 0 solid transparent;
             border-radius: 20px;
+
+            @include button-flex;
+            @include button-dimensions;
+        }
+        &-start
+        {
+            color: $font-color;
+            border: 0 solid transparent;
+            border-radius: 20px;
+            background-color: $principal-color;
+            margin-top: 25px;
+
+            @include button-flex;
+            @include button-dimensions;
         }
     }
 }

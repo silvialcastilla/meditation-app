@@ -39,13 +39,15 @@ export const SignInPage = () => {
                 image={facebook}
                 onClick={() => history.push("/")}
                 title={language === 'en' ? datalanguage.signInPage.buttonFacebook.en : datalanguage.signInPage.buttonFacebook.es}
-            />
+                classSpace="button-sign-in-padding"
+          />
             <Button
                 alt="google icon"
                 className="button-sign-in-google"
                 image={google}
                 onClick={() => history.push("/")}
                 title={language === 'en' ? datalanguage.signInPage.buttonGoogle.en : datalanguage.signInPage.buttonGoogle.es}
+                classSpace="button-sign-in-padding"
             />
             <Paragraph
                 className="paragraph-sign-in-one"
@@ -65,7 +67,7 @@ export const SignInPage = () => {
                 placeholder={language === 'en' ? datalanguage.signUpPage.inputPassword.en : datalanguage.signUpPage.inputPassword.es}
             />
             <Button
-                className="button-sign-in-facebook"
+                className="button-sign-in-start"
                 title={language === 'en' ? datalanguage.signUpPage.button.en : datalanguage.signUpPage.button.es}
                 onClick={() => history.push("welcome")}
             />

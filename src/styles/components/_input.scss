@@ -4,26 +4,11 @@
 
 .input
 {
-    &-sign-up
+    &-sign-up , &-sign-in
     {
-        width: 386px;
-        height: 54px;
-        margin-top: 30px;
-
-        color: $grey-color;
-        border: 0 solid transparent;
-        border-radius: 15px;
-        background-color: $background-color;
-    }
-    &-sign-in
-    {
-        width: 386px;
-        height: 54px;
-        margin-top: 30px;
-
-        color: $grey-color;
-        border: 0 solid transparent;
-        border-radius: 15px;
-        background-color: $background-color;
+        @include input-box;
+        &-checkbox{
+            margin-right: $dimensions-padding-margin;
+        }
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Button = ({alt, clase, className, image ,title, onClick}) => {
+export const Button = ({alt, classSpace, className, image ,title, onClick}) => {
     return (
         <button 
             className={className} 
@@ -9,12 +9,12 @@ export const Button = ({alt, clase, className, image ,title, onClick}) => {
                 {image === undefined 
                 ? <></> 
                 : <img 
-                    className={clase}
+                    className={classSpace}
                     src={image} 
                     alt={alt}
                 /> 
                 }
-        {title}
+{title}
         </button>
     )
 }

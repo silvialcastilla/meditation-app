@@ -17,4 +17,21 @@
         height: 42px;
         margin-top: 0;
     }
+    &-sign-up
+    {
+        &-one
+        {
+            padding-top: 20px;
+        }
+    }
+    &-sign-in
+    {
+        &-one
+        {
+            padding-top: 20px;
+        }
+        &-two{
+            padding-top: 20px;  
+        }
+    }
 }

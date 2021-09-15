@@ -38,13 +38,15 @@ export const SignUpPage = () => {
                 image={facebook}
                 onClick={() => history.push("/")}
                 title={ language === 'en' ? datalanguage.signUpPage.buttonFacebook.en : datalanguage.signUpPage.buttonFacebook.es}
-            />
+                classSpace="button-sign-up-padding"
+           />
             <Button
                 alt="google icon"
                 className="button-sign-up-google"
                 image={google}
                 onClick={() => history.push("/")}
                 title={ language === 'en' ? datalanguage.signUpPage.buttonGoogle.en : datalanguage.signUpPage.buttonGoogle.es}
+                classSpace="button-sign-up-padding"
             />
             <Paragraph
                 className="paragraph-sign-up-one"
@@ -76,12 +78,12 @@ export const SignUpPage = () => {
                     type="checkbox"
                 /> 
                 <Paragraph
-                    className="paragraph-sign-up-one"
+                    className="paragraph-sign-up-two"
                     information={ language === 'en' ? datalanguage.signUpPage.paragraphPrivatePolicy.en : datalanguage.signUpPage.paragraphPrivatePolicy.es}
                 /> 
             </div>        
             <Button
-                className="button-sign-up-facebook"
+                className="button-sign-up-start"
                 onClick={() => history.push("/welcome")}
                 title={ language === 'en' ? datalanguage.signUpPage.button.en : datalanguage.signUpPage.button.es}
             />

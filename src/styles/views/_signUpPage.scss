@@ -1,11 +1,20 @@
-.sign-up.title {
-    height: 38px;
-    width: 70%;
-    font-size: 28px;
+.sign-up
+{
+    &-title
+    {
+        font-size: 28px;
+
+        width: 70%;
+        height: 38px;
+    }
+    
 }
 
-.sign-up-checkbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+.checkbox-sign-up
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        text-align: center;
+    }

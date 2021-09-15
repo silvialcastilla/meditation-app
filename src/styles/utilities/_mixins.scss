@@ -1,23 +1,11 @@
 @import './variables';
 
-@mixin button-purple
-{
-    width: 386px;
-    height: 54px;
-    margin-top: 50px;
-
-    color: $font-color;
-    border: 0 solid transparent;
-    border-radius: 38px;
-    background-color: $principal-color;
-}
-
 @mixin button-back
 {
     align-self: flex-start;
 
-    width: 55px;
-    height: 55px;
+    width: $dimension-button-back;
+    height: $dimension-button-back;
     margin-left: 30px;
 
     border: 1px solid $secondary-color;
@@ -25,11 +13,13 @@
     background-color: $primary-color;
 }
 
-@mixin button-auth 
-{
-    
-}
 
+
+@mixin border-button 
+{
+    border: 0 solid transparent;
+    border-radius: 20px;
+}
 @mixin flex-center
 {
     display: flex;
@@ -38,13 +28,39 @@
     flex-direction: column;
 }
 
-@mixin button-flex 
+@mixin button-flex
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-@mixin button-dimensions {
+@mixin button-dimensions
+{
     width: 386px;
     height: 54px;
+}
+@mixin button-purple
+{
+    margin-top: 50px;
+
+    color: $font-color;
+    border: 0 solid transparent;
+    border-radius: 38px;
+    background-color: $principal-color;
+
+    @include button-dimensions;
+}
+
+@mixin input-box {
+    @include button-dimensions;
+    margin-top: 30px;
+    padding-right: 50px;
+
+    text-align: left;
+    padding-left: $dimensions-padding-margin;
+    color: $grey-color;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    background-color: $background-color;
 }
