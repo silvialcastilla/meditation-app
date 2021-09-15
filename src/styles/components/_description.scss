@@ -7,6 +7,12 @@
     }
     &-welcome {
         font-family: 'Dancing Script', cursive;
-        font-size: 40px;
+        font-size: 40px;        
+        width: 60%;
+        height: 30px;
+    }
+    &-topic{
+        width: 60%;
+        height: 30px;
     }
 }

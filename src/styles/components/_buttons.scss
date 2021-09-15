@@ -51,7 +51,8 @@
             @include button-dimensions;
         }
     }
-    &-sign-in {
+    &-sign-in
+    {
         &-back
         {
             @include button-back;
@@ -85,11 +86,27 @@
         }
         &-start
         {
+            margin-top: 25px;
+
             color: $font-color;
             border: 0 solid transparent;
             border-radius: 20px;
             background-color: $principal-color;
+
+            @include button-flex;
+            @include button-dimensions;
+        }
+    }
+    &-welcome
+    {
+        &-start
+        {
             margin-top: 25px;
+
+            color: $font-color;
+            border: 0 solid transparent;
+            border-radius: 20px;
+            background-color: $principal-color;
 
             @include button-flex;
             @include button-dimensions;
