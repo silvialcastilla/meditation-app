@@ -10,11 +10,12 @@ export const TopicPage = () => {
         <div className="topic">
             <Description
                 className="title-topic"
-                information="choose a topic to focuse on:"
+                information="Choose a topic to focuse on"
                 title="What Brings you to Silent Moon?"
             />
             <CardList
                 data= {data.topics}
+                className="cardList-topic"
             />
         </div>
     )
